@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Compassionate, evidence-based therapy for anxiety, trauma, EMDR, and burnout in Santa Monica and across California with Dr. Maya Reynolds, PsyD.",
 };
 
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
