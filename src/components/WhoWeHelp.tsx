@@ -17,9 +17,9 @@ export default function WhoWeHelp() {
           {/* Card 1: Anxiety */}
           <div className="flex flex-col group">
             <div className="h-80 sm:h-96 w-full overflow-hidden mb-6 bg-[var(--color-sandMuted)] relative">
-              <Image 
-                src="/images/anxiety-card.jpeg" 
-                alt="Individual enjoying calm reflection in daylight" 
+              <Image
+                src="/images/anxiety-card2.jpeg"
+                alt="Individual enjoying calm reflection in daylight"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
@@ -40,9 +40,9 @@ export default function WhoWeHelp() {
           {/* Card 2: Trauma & EMDR */}
           <div className="flex flex-col group">
             <div className="h-80 sm:h-96 w-full overflow-hidden mb-6 bg-[var(--color-sandMuted)] relative">
-              <Image 
-                src="/images/trauma-card.jpeg" 
-                alt="Quiet ocean coastal landscape evoking peace" 
+              <Image
+                src="/images/trauma-card.jpeg"
+                alt="Quiet ocean coastal landscape evoking peace"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
@@ -63,9 +63,9 @@ export default function WhoWeHelp() {
           {/* Card 3: Burnout & Perfectionism */}
           <div className="flex flex-col group">
             <div className="h-80 sm:h-96 w-full overflow-hidden mb-6 bg-[var(--color-sandMuted)] relative">
-              <Image 
-                src="/images/burnout-card.jpeg" 
-                alt="Person grounded in peaceful nature mindfulness" 
+              <Image
+                src="/images/burnout-card.jpeg"
+                alt="Person grounded in peaceful nature mindfulness"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
