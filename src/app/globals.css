@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-linen: #F9F6F0;
+  --color-linenLight: #FCFAF7;
+  --color-sandMuted: #EFE9DF;
+  --color-sandStone: #E3DACD;
+  --color-sageDark: #4F6359;
+  --color-sageAccent: #5F827E;
+  --color-sageMuted: #7D8C7C;
+  --color-charcoal: #1E2522;
+  --color-charcoalLight: #39433E;
+  --color-warmTerracotta: #9E6B55;
+
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), sans-serif;
+  --font-script: var(--font-alex-brush), cursive;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background-color: var(--color-linen);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-cormorant {
+  font-family: var(--font-serif);
+}
+
+.font-script-accent {
+  font-family: var(--font-script);
+  font-weight: normal;
+}
+
+.editorial-underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.14em;
+}
+.editorial-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background-color: currentColor;
+  transition: transform 0.25s ease-out;
+}
+.editorial-underline:hover::after {
+  transform: scaleX(0.7);
+}
+
+/* Mobile menu & hamburger transitions */
+.hamburger-line {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, width 0.25s ease;
+  transform-origin: center;
+}
+.menu-active #line-1 {
+  transform: translateY(5.5px) rotate(45deg);
+}
+.menu-active #line-2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.menu-active #line-3 {
+  transform: translateY(-5.5px) rotate(-45deg);
+}
+
+#mobile-menu {
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
+}
+#mobile-menu.menu-closed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  visibility: hidden;
+  pointer-events: none;
+}
+#mobile-menu.menu-open {
+  max-height: 520px;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+#mobile-backdrop {
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+#mobile-backdrop.backdrop-closed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#mobile-backdrop.backdrop-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

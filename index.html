@@ -1,0 +1,756 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Dr. Maya Reynolds, PsyD | Anxiety &amp; Trauma Therapist Santa Monica</title>
+<meta content="Compassionate, evidence-based therapy for anxiety, trauma, EMDR, and burnout in Santa Monica and across California with Dr. Maya Reynolds, PsyD." name="description">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Cormorant Garamond, Alex Brush (script accent), Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#F9F6F0',
+            linenLight: '#FCFAF7',
+            sandMuted: '#EFE9DF',
+            sandStone: '#E3DACD',
+            sageDark: '#4F6359',
+            sageAccent: '#5F827E',
+            sageMuted: '#7D8C7C',
+            charcoal: '#1E2522',
+            charcoalLight: '#39433E',
+            warmTerracotta: '#9E6B55'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="typography-and-effects">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1E2522;
+      background-color: #F9F6F0;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .font-script-accent {
+      font-family: 'Alex Brush', cursive;
+      font-weight: normal;
+    }
+    .editorial-underline {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      letter-spacing: 0.14em;
+    }
+    .editorial-underline::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(1);
+      height: 1px;
+      bottom: -4px;
+      left: 0;
+      background-color: currentColor;
+      transition: transform 0.25s ease-out;
+    }
+    .editorial-underline:hover::after {
+      transform: scaleX(0.7);
+    }
+
+    /* Mobile menu & hamburger transitions */
+    .hamburger-line {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, width 0.25s ease;
+      transform-origin: center;
+    }
+    .menu-active #line-1 {
+      transform: translateY(5.5px) rotate(45deg);
+    }
+    .menu-active #line-2 {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .menu-active #line-3 {
+      transform: translateY(-5.5px) rotate(-45deg);
+    }
+
+    #mobile-menu {
+      transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
+    }
+    #mobile-menu.menu-closed {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-8px);
+      visibility: hidden;
+      pointer-events: none;
+    }
+    #mobile-menu.menu-open {
+      max-height: 520px;
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    #mobile-backdrop {
+      transition: opacity 0.3s ease, visibility 0.3s;
+    }
+    #mobile-backdrop.backdrop-closed {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    #mobile-backdrop.backdrop-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body class="bg-linen text-charcoal flex flex-col min-h-screen">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-sandMuted/60 transition-all duration-300">
+<div class="w-full px-6 lg:px-14 py-4 flex items-center justify-between">
+<!-- Brand Wordmark -->
+<a class="flex flex-col group" href="#hero">
+<span class="font-cormorant text-2xl lg:text-[27px] font-normal tracking-wide text-charcoal group-hover:text-sageDark transition-colors">
+          Dr. Maya Reynolds
+        </span>
+<span class="text-[10px] tracking-[0.25em] text-sageMuted font-medium uppercase mt-0.5">
+          PsyD • Clinical Psychologist
+        </span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-10 text-[11px] font-medium tracking-[0.22em] text-charcoalLight uppercase">
+<a class="hover:text-sageAccent transition-colors" href="#about">About</a>
+<a class="hover:text-sageAccent transition-colors" href="#who-we-help">Who We Help</a>
+<a class="hover:text-sageAccent transition-colors" href="#specialties">Specialties</a>
+<a class="hover:text-sageAccent transition-colors" href="#office">Our Office</a>
+<a class="hover:text-sageAccent transition-colors" href="#approach">Approach</a>
+<a class="hover:text-sageAccent transition-colors" href="#faqs">FAQs</a>
+</nav>
+<!-- Desktop Action CTA -->
+<div class="hidden lg:flex items-center">
+<a class="px-6 py-2 border border-charcoal/80 rounded-full text-[11px] font-medium tracking-[0.18em] text-charcoal uppercase hover:bg-charcoal hover:text-white transition-all duration-300" href="#contact">
+          Book a Consultation
+        </a>
+</div>
+<!-- Mobile Hamburger Button -->
+<div class="lg:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle Navigation Menu" class="group relative w-10 h-10 rounded-full flex items-center justify-center text-charcoal transition-all duration-300 hover:bg-sandMuted/60 active:scale-95 focus:outline-none" id="mobile-menu-btn">
+<div class="flex flex-col justify-center items-center w-5 h-4 relative">
+<span class="hamburger-line block w-5 h-[1.5px] bg-charcoal rounded-full mb-1" id="line-1"></span>
+<span class="hamburger-line block w-5 h-[1.5px] bg-charcoal rounded-full mb-1" id="line-2"></span>
+<span class="hamburger-line block w-5 h-[1.5px] bg-charcoal rounded-full" id="line-3"></span>
+</div>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation & Backdrop -->
+<div class="backdrop-closed fixed inset-0 top-[73px] bg-charcoal/20 backdrop-blur-sm z-40 lg:hidden" id="mobile-backdrop"></div>
+<div aria-label="Mobile Navigation" class="menu-closed relative z-50 lg:hidden bg-linen/95 backdrop-blur-md px-8 py-6 border-t border-sandMuted flex flex-col space-y-4 text-xs tracking-[0.2em] font-medium uppercase text-charcoal shadow-lg overflow-hidden" id="mobile-menu" role="region">
+<a class="mobile-nav-link py-1.5 transition-colors duration-200 hover:text-sageAccent" href="#about">About</a>
+<a class="mobile-nav-link py-1.5 transition-colors duration-200 hover:text-sageAccent" href="#who-we-help">Who We Help</a>
+<a class="mobile-nav-link py-1.5 transition-colors duration-200 hover:text-sageAccent" href="#specialties">Specialties</a>
+<a class="mobile-nav-link py-1.5 transition-colors duration-200 hover:text-sageAccent" href="#office">Our Office</a>
+<a class="mobile-nav-link py-1.5 transition-colors duration-200 hover:text-sageAccent" href="#approach">Approach</a>
+<a class="mobile-nav-link py-1.5 transition-colors duration-200 hover:text-sageAccent" href="#faqs">FAQs</a>
+<div class="pt-3">
+<a class="mobile-nav-link inline-block w-full text-center py-3 border border-charcoal rounded-full text-charcoal hover:bg-charcoal hover:text-white transition-colors duration-300" href="#contact">Book a Consultation</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="flex-grow">
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-[#FAF7F2] min-h-fit lg:h-[84vh] lg:min-h-[620px] lg:max-h-[900px] flex items-center overflow-hidden" id="hero">
+<div class="w-full h-full flex flex-col lg:flex-row items-center justify-between">
+<!-- Editorial Copy Column (First on mobile, second on desktop) -->
+<div class="w-full lg:w-[57%] px-6 sm:px-10 lg:px-16 pt-10 pb-8 lg:py-0 flex flex-col justify-center max-w-2xl lg:order-2">
+<!-- Eyebrow Tag -->
+<p class="text-[11px] font-medium tracking-[0.22em] text-charcoal/80 uppercase mb-4 sm:mb-5">
+    Therapy &amp; Counseling in Santa Monica &amp; Across CA
+  </p>
+<!-- Main Title with Script Accent -->
+<h1 class="font-cormorant text-4xl sm:text-5xl lg:text-[58px] leading-[1.14] text-charcoal font-normal mb-5 sm:mb-6">
+    Rebuild your foundation on solid ground and finally begin to <span class="font-script-accent text-sageAccent text-5xl lg:text-7xl lowercase pl-1 pr-1.5 -rotate-2 inline-block">thrive.</span>
+</h1>
+<!-- Subtitle copy -->
+<p class="text-sm lg:text-[15px] leading-relaxed text-charcoalLight/90 font-light mb-8 sm:mb-9 max-w-lg">
+    Evidence-based therapy for adults navigating anxiety, trauma, and burnout to reflect, heal, and find sustainable relief in an authentic, supportive space.
+  </p>
+<!-- Underlined CTA Link -->
+<div>
+<a class="editorial-underline text-[11px] font-semibold tracking-[0.22em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+      BOOK AN APPOINTMENT
+    </a>
+</div>
+</div>
+<!-- Dr. Maya's Portrait (Fluid scaling, natural portrait aspect ratio & top-anchored framing to avoid cut-off or extreme close-up) -->
+<div class="w-full lg:w-[35%] lg:h-full relative overflow-hidden bg-sandStone/20 flex-shrink-0 lg:order-1 flex items-center justify-center px-4 pb-8 sm:pb-10 lg:px-0 lg:pb-0">
+<div class="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none lg:w-full lg:h-full aspect-[3/4] sm:aspect-[4/5] lg:aspect-auto relative overflow-hidden rounded-sm lg:rounded-none shadow-sm lg:shadow-none">
+<img alt="Dr. Maya Reynolds, PsyD - Santa Monica Licensed Clinical Psychologist" class="w-full h-full object-cover object-[center_12%] lg:object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYl326nF8R3nmQb6NnXLh2oYSqHCRrfNJee-2lAMp8AH8APIJxK9meElYCx_VMii_CpPkT2BQpMcvwQwmmX8N_laDxYnBnEt4tXRm-UYwvPpSJu-LyHO4GQXEoq4WidqWHGLBolSEipBMG6u5F2SPl6q-E2vlrIipI5GYdgyZe4ZSoZl6Mv3lZreIZ_J_ofIe4YDIlI_LPllE_Demic6PEt1ww5FyqUGYXwjq01MWEC9hZ9mIx7K9Mpi4U6Ev_9zX9XQ">
+</div>
+</div>
+<!-- Right Ocean Landscape Sliver (Desktop only, hidden on mobile) -->
+<div class="hidden xl:block w-[8%] h-full relative overflow-hidden flex-shrink-0 lg:order-3">
+<div class="absolute inset-0 bg-gradient-to-l from-transparent to-[#FAF7F2] opacity-30 z-10"></div>
+<div class="w-full h-full bg-slate-300 relative">
+<img alt="Serene Santa Monica coastline waters" class="w-full h-full object-cover object-right" src="https://lh3.googleusercontent.com/aida/AEtjO1WtxQ_yc259IooixgHsgvnvaoBEzMvF8uDQDWY13TlLj7_sNr_hcTJsHfYOBqskBH9CS56iOwXgjgzmSxJZXvHC_93oR0v9Urlh6ekliDCxAUYNWjREHNa6hJdyX4GN98PFkwJrUucOt42lNaWtNcRmnoEEVW0r9Tg7Z_lrOr9fnBRW3CXP8mhYZ-M0ePpabeZh5tsYjvQ_Y3y0QS7BSt3k80pQHGEf5bEJ6TyUGXNMzuCUk79Y7ZFvTP0">
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: ValuePropSection -->
+<section class="py-16 lg:py-32 bg-[#FAF7F2] border-t border-sandMuted/40" id="about">
+<div class="w-full flex flex-col lg:flex-row items-center justify-between">
+<!-- Left Content Column -->
+<div class="w-full lg:w-[60%] px-6 sm:px-14 lg:pl-20 lg:pr-16 max-w-3xl">
+<h2 class="font-cormorant text-3xl sm:text-4xl lg:text-[46px] font-normal leading-tight text-charcoal mb-8 sm:mb-12">
+    You’re holding onto hope that life can be better than it is right now.
+  </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 text-[13px] leading-relaxed text-charcoalLight font-light">
+<!-- Col A -->
+<div>
+<p class="font-medium tracking-wide text-charcoal uppercase text-[11px] mb-3 leading-snug">
+        AT DR. MAYA REYNOLDS PSYCHOLOGY WE HELP MAKE THAT HOPE A REALITY.
+      </p>
+<p class="">
+        Whether you're a high-achiever feeling exhausted under internal pressure, navigating chronic panic, or seeking to resolve long-standing trauma wounds, we provide an empathetic, grounded haven where you don't have to hold it all alone.
+      </p>
+</div>
+<!-- Col B -->
+<div>
+<p class="mb-4">
+        First and foremost, we believe what you are experiencing is real, valid, and worthy of collaborative support. Our Santa Monica practice offers in-person care and telehealth throughout California, integrating CBT, EMDR, and nervous system regulation.
+      </p>
+<a class="editorial-underline text-[10px] font-medium tracking-[0.2em] uppercase text-charcoal hover:text-sageAccent mt-2 inline-block" href="#approach">
+        LEARN MORE ABOUT OUR CARE
+      </a>
+</div>
+</div>
+</div>
+<!-- Right Tall Vertical Shoreline Image (Cleanly sits below on mobile, side-by-side on desktop) -->
+<div class="w-full lg:w-[40%] mt-10 lg:mt-0 h-[300px] sm:h-[420px] lg:h-[620px] overflow-hidden">
+<img alt="Gentle Pacific coast wave foam on sandy shore" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1XfVDHaolwTfmUK5pgvQupMFRxYFuAD2WxvXTBu3TREt7FH7Ly3zHE8S7yub9gYARlI9Horcj0AQ3oGQTwF_EVJdO0aUvr6MmAvpm3wsEXRgAS4V9XcTMThQIpTTkiOYecDjZqgRlEiD0ABh4j8rHH67uCylfxkikoz9U7BO5VZgDidchBBkibBmxwc2QpOTMxf2r7mkMKhJZRcqWhpWHEsWMXcwyOfM0AV2mcWGFaoTy0RtY-2JHeggc0">
+</div>
+</div>
+</section>
+<!-- END: ValuePropSection -->
+<!-- BEGIN: WhoWeHelpSection -->
+<section class="py-24 bg-white" id="who-we-help">
+<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+<!-- Section Title with Script Accent -->
+<div class="mb-16">
+<h2 class="font-cormorant text-4xl sm:text-5xl text-charcoal font-normal tracking-tight">
+            Who we <span class="font-script-accent text-sageAccent text-5xl sm:text-6xl pl-1">help</span>
+</h2>
+</div>
+<!-- 3 Column Clinical Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+<!-- Card 1: Anxiety -->
+<div class="flex flex-col group">
+<div class="h-80 sm:h-96 w-full overflow-hidden mb-6 bg-sandMuted">
+<img alt="Individual enjoying calm reflection in daylight" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1UneqbMuRt8fAgU__cR0wC7E1fCReOQUjWdx0HlMGIijMfradQlUOyUcNBTc7-zsvrwE2o6xJb9kImaiOmv02Lj-ANpwnAYA6wgvUNYX0--iRja_PhfM38PottU8u8B-tOpPIkC63u7AM-7X1Q2t9058DiqpZm1Z1lFqGjUpml8K-rU1OrjfFmKxfOmpmKMWeAnfCaTnCqRO8TMIr35xyU6FjKv77muhHfYyQSHHCk2hVeQw_S7on57U14">
+</div>
+<h3 class="font-cormorant text-2xl text-charcoal font-normal mb-3">
+              Anxiety Therapy in Santa Monica
+            </h3>
+<p class="text-[13px] text-charcoalLight leading-relaxed font-light mb-6 flex-grow">
+              For adults who appear capable and functional on the outside while quietly carrying constant worry, bodily tension, racing thoughts, or sleep disruption. We identify roots and restore autonomic balance.
+            </p>
+<div>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+</div>
+<!-- Card 2: Trauma & EMDR -->
+<div class="flex flex-col group">
+<div class="h-80 sm:h-96 w-full overflow-hidden mb-6 bg-sandMuted">
+<img alt="Quiet ocean coastal landscape evoking peace" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XmGPH_ojIbyQbGCa_Z-cW2m-oN09EItKsJkk3JcuX-V1XJBXdbvKGWxs49HCdb3MN6jZn57x3vgRkI1-V-DjAzElRF9Bg3FO4yea3ngm_0YMCEPk2Gi5hXgnHsoSLWtFO4cLeQrSpX1fB4KWlK64LI3qC74WIljv1YdoViZq3qtAG241nOaPx4oR2BFjS_yQTdZm1LL-Ujt-CLfpnpxXHnov-FTAj9jwBX2C3rAC2QFrA7gZo3OO_q-rs">
+</div>
+<h3 class="font-cormorant text-2xl text-charcoal font-normal mb-3">
+              Trauma &amp; EMDR Therapy
+            </h3>
+<p class="text-[13px] text-charcoalLight leading-relaxed font-light mb-6 flex-grow">
+              Paced, safe healing for single-incident trauma or long-standing childhood wounds and relational patterns. Utilizing EMDR and somatic stabilization to release painful stored memories safely.
+            </p>
+<div>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+</div>
+<!-- Card 3: Burnout & Perfectionism -->
+<div class="flex flex-col group">
+<div class="h-80 sm:h-96 w-full overflow-hidden mb-6 bg-sandMuted">
+<img alt="Person grounded in peaceful nature mindfulness" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1X9sNnK2Vf0IsvSOBiU6dTT0mFsu3BBrvPave53bLEZL1HTDTjCqcY5bZysJt2501ApBQqcmIxCDyTp6rw2rwN5BPKCXX8wkQeyj8drTpD-qmEsW09o3RpcG1Eui0edDr6TMTarnHiMZLJT9ZlcNLzirC241anHv4CXs3fOXtzuGz5WEuWE1wQh_c_6IiChg9NHSnxW7ALbpOr8B_R9ekGZ5Ur4E2BtwsPoVD6BL56KtGq13KIejoLRJAA">
+</div>
+<h3 class="font-cormorant text-2xl text-charcoal font-normal mb-3">
+              Burnout &amp; Perfectionism
+            </h3>
+<p class="text-[13px] text-charcoalLight leading-relaxed font-light mb-6 flex-grow">
+              Tailored care for professionals, creatives, and entrepreneurs depleted by relentless internal pressure, imposter feelings, and difficulty stepping away from work obligations.
+            </p>
+<div>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhoWeHelpSection -->
+<!-- BEGIN: FullWidthEditorialQuoteBanner -->
+<section class="relative w-full h-[400px] lg:h-[480px] overflow-hidden flex items-center justify-center">
+<img alt="Open peaceful ocean beach landscape" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1XrJCIjnpokykdRV5_OPrUJTbHRBw-YLhrc6kL0RYcxbqKUc4Zr76usNxx2Yq1JLwjjXZMG8XOYH3M42GsfkbMp1m0rCuog_RqtOZZr5wixaGlVm_dzNMpqRN17HtHtI7HBx_t2TGOa_RBdUy7_MmhwGrhNe_5yV8lB0A-8Z_FncrtOOkyeqaIePJgPSB0b4jqvxdUgS_xYXYF0y_L8-twrJsTgpLVougoPq3eFERZXuppXcXi6pOr_mU4">
+<div class="absolute inset-0 bg-charcoal/35 backdrop-brightness-95"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+<blockquote class="font-cormorant text-2xl sm:text-3xl lg:text-[38px] font-normal leading-snug drop-shadow-sm">
+          “You deserve a place where your story is heard, valued, and understood. <span class="italic font-light">Nothing will be too heavy for us to carry together.”</span>
+</blockquote>
+<p class="mt-6 text-[11px] uppercase tracking-[0.24em] font-medium text-linen/90">
+          — Dr. Maya Reynolds, PsyD
+        </p>
+</div>
+</section>
+<!-- END: FullWidthEditorialQuoteBanner -->
+<!-- BEGIN: AreasOfExpertiseSection -->
+<section class="py-24 lg:py-28 bg-white border-b border-sandMuted/60">
+<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16">
+<div class="w-full lg:w-1/3">
+<h2 class="font-cormorant text-3xl sm:text-4xl lg:text-[44px] text-charcoal font-normal leading-tight">
+            Our areas of<br>
+<span class="font-script-accent text-sageAccent text-5xl lg:text-6xl pl-1 inline-block">expertise</span>
+</h2>
+</div>
+<div class="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-12">
+<!-- Col 1 -->
+<div class="space-y-0">
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Anxiety &amp; Panic Disorders
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Trauma &amp; PTSD (EMDR Certified)
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Somatic &amp; Nervous System Balance
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              High Internal Pressure &amp; Perfectionism
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Depression &amp; Low Vitality
+            </div>
+</div>
+<!-- Col 2 -->
+<div class="space-y-0">
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Professional Burnout &amp; Work Stress
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Healthy Boundaries &amp; Relationships
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Sleep &amp; Somatic Stress Manifestations
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal">
+              Life Transitions &amp; Identity Work
+            </div>
+<div class="py-4 border-b border-sandMuted text-[11px] tracking-[0.2em] uppercase font-medium text-charcoal text-sageAccent">
+              ...And More
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AreasOfExpertiseSection -->
+<!-- BEGIN: HowWeWorkSection -->
+<section class="py-24 bg-[#FAF7F2]" id="approach">
+<div class="w-full flex flex-col lg:flex-row items-center justify-between">
+<div class="w-full lg:w-[58%] px-8 sm:px-14 lg:pl-20 lg:pr-16 max-w-3xl">
+<p class="text-[11px] font-semibold tracking-[0.22em] text-charcoal/70 uppercase mb-4">
+            How We Work
+          </p>
+<h2 class="font-cormorant text-3xl sm:text-4xl lg:text-[44px] text-charcoal font-normal leading-tight mb-10">
+            We’re here to make a grounded difference.
+          </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-[13px] leading-relaxed text-charcoalLight font-light mb-8">
+<div>
+<p class="font-medium tracking-wide text-charcoal uppercase text-[11px] mb-3 leading-snug">
+                The clients we work with carry so much at once; it can be hard to prioritize themselves.
+              </p>
+<p class="">
+                In our Santa Monica office and virtual appointments, your safety and autonomy are our highest priorities. We listen with clinical precision and warmth to tailor every session to your history, rather than following rigid one-size-fits-all scripts.
+              </p>
+</div>
+<div>
+<p class="">
+                We gently weave together cognitive clarity (CBT), deep physiological healing (EMDR and somatic grounding), and practical relational boundaries. Our goal is to walk alongside you with steady compassion, equipping you to reconnect with your inherent calm and strength.
+              </p>
+</div>
+</div>
+<div>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] uppercase text-charcoal hover:text-sageAccent" href="#contact">
+              LEARN MORE ABOUT US
+            </a>
+</div>
+</div>
+<div class="w-full lg:w-[42%] mt-12 lg:mt-0 h-[440px] lg:h-[600px] overflow-hidden">
+<img alt="Warm sunlit serene setting" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1X-oPqCbeswB3DcD9AWpQy2hesFt1IcRgXD560X_dchdka4kQ2JeIr-M9MRHZbbjO8KQK4wjStBgnvVweXuxnV_0O_d-_ezqVqI2XlAIRvTrmXhTBv15ZBh2m3f-5PLx1tthWoF38_qpxsN-ywfdqT2XzskQfPZXOY3lrhaAAYoTgpUe9d7EZIVaLDe8EvufzQdoidtrnJYZ3GdtVICL0hx8OigGhLEZLHarYj6ALDfWk0tfLvgG0rQxds">
+</div>
+</div>
+</section>
+<!-- END: HowWeWorkSection -->
+<!-- BEGIN: SpecialtiesGridSection -->
+<section class="py-24 bg-white" id="specialties">
+<div class="w-full mb-16">
+<div class="flex flex-col lg:flex-row items-center justify-between">
+<div class="w-full lg:w-[50%] h-[320px] lg:h-[460px] overflow-hidden">
+<img alt="Family walking peacefully at coastline" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1URuJlCrL8k8IYAvdT_iTNoGDDEnzW_EXqzUm6GQaOskwDapu4lO0_Uer5k96E4fXO4kYxZaE-mXl_wcZ0_XdrkpV01eC7C6Qzu132PBEMrzfO47_d-msLV8TIi2NjjanX4M48bKPRbZPEqKzRWeC-fqfFp17TTIAftm8rQ8MGSXljDpAAD3Casw8Ctv3jyzaatcb4C_dztISQpEqYaG-Z0N_soWyELJPuMlHJo-oOc1Y5y30MDhwXoow">
+</div>
+<div class="w-full lg:w-[50%] px-8 sm:px-14 lg:px-20 py-10 lg:py-0">
+<h2 class="font-cormorant text-3xl sm:text-4xl lg:text-[46px] font-normal text-charcoal leading-[1.2]">
+              Honoring where you’ve been <span class="font-script-accent text-sageAccent text-4xl lg:text-6xl pl-1 pr-1 font-normal">&amp;</span> helping shape where you’re headed.
+            </h2>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 pt-8">
+<div class="flex flex-col lg:flex-row items-start justify-between gap-12">
+<div class="w-full lg:w-1/4">
+<h3 class="font-cormorant text-3xl text-charcoal font-normal">
+              Our <span class="font-script-accent text-sageAccent text-4xl">specialties</span><br>include...
+            </h3>
+</div>
+<div class="w-full lg:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-12">
+<!-- Item 1 -->
+<div>
+<h4 class="font-cormorant text-2xl text-charcoal font-normal mb-3">Trauma Recovery</h4>
+<p class="text-[13px] text-charcoalLight font-light leading-relaxed mb-4">
+                We don’t always know when and how we’ve experienced trauma. In therapy, we work together to help you process your past, understand what’s causing you to feel "stuck," and regain a visceral sense of safety and agency.
+              </p>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+<!-- Item 2 -->
+<div>
+<h4 class="font-cormorant text-2xl text-charcoal font-normal mb-3">EMDR Reprocessing</h4>
+<p class="text-[13px] text-charcoalLight font-light leading-relaxed mb-4">
+                Eye Movement Desensitization and Reprocessing (EMDR) is a powerful, evidence-backed modality that aids the brain in reprocessing painful or distressing memories so they no longer trigger acute daily distress.
+              </p>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+<!-- Item 3 -->
+<div>
+<h4 class="font-cormorant text-2xl text-charcoal font-normal mb-3">Anxiety &amp; Panic Relief</h4>
+<p class="text-[13px] text-charcoalLight font-light leading-relaxed mb-4">
+                Moving past perpetual alarm states and catastrophic thoughts through physiological nervous system regulation, cognitive reframing, and actionable somatic stabilization techniques.
+              </p>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+<!-- Item 4 -->
+<div>
+<h4 class="font-cormorant text-2xl text-charcoal font-normal mb-3">Burnout &amp; High Achievers</h4>
+<p class="text-[13px] text-charcoalLight font-light leading-relaxed mb-4">
+                High-functioning exhaustion requires intentional, specialized care. We unpack internalized perfectionism, rebalance boundary fatigue, and craft life rhythms that preserve both well-being and ambition.
+              </p>
+<a class="editorial-underline text-[10px] font-semibold tracking-[0.2em] text-charcoal uppercase hover:text-sageAccent" href="#contact">
+                LEARN MORE
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SpecialtiesGridSection -->
+<!-- BEGIN: OfficeSection -->
+<section class="py-24 bg-[#F5F0EA] border-y border-sandMuted/60" id="office">
+<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+<div class="max-w-2xl mx-auto text-center mb-16">
+<p class="text-[11px] font-semibold tracking-[0.22em] text-charcoal/70 uppercase mb-3">
+            A Calm Space for Healing
+          </p>
+<h2 class="font-cormorant text-3xl sm:text-4xl lg:text-[46px] font-normal text-charcoal">
+            Our Santa Monica <span class="italic text-sageDark">Sanctuary</span>
+</h2>
+<p class="mt-4 text-[14px] leading-relaxed text-charcoalLight font-light">
+            Located at 123th Street 45 W, Santa Monica, CA 90401. A quiet, private suite intentionally designed to feel calm and grounding, with abundant natural light, exposed brick, and an uncluttered atmosphere. Clients often share that the space itself helps them feel more at ease when they arrive. In-person therapy is offered here, alongside secure telehealth appointments across California.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Office Image 1 -->
+<div class="flex flex-col bg-white p-4 shadow-sm border border-sandMuted">
+<div class="h-80 sm:h-[420px] overflow-hidden">
+<img alt="Sunlit Santa Monica therapy office with exposed brick and natural light" class="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhkVSVuKs-ScURYEfZZAtRgWTb34sHueG-mCfkbG_XUE4sX1u4yOWIbqtf7SmNdypEQ2mrAVmN2v9leDON1DzgEXYLrWMpsEHhtPfNL4RriCtAAtGGRIFqRRHROnCfUIdY7s0mw5IW7zx2vhyIIfxntwe0-tOwGnMx9MWyz9gdKJZrt0CwVdOrtaLlzse5dFnbX4LnzZxamdqIWGHO-irC1U7J1mdYbXFFL0XBiBiM31FZWimIH_KW8-sLI30IHM_GWA">
+</div>
+<div class="pt-4 px-2">
+<p class="font-cormorant text-lg text-charcoal">Warm Natural Light &amp; Architectural Calm</p>
+<p class="text-xs text-charcoalLight font-light mt-1">Tall airy windows and acoustic warmth to foster ease and open conversation.</p>
+</div>
+</div>
+<!-- Office Image 2 -->
+<div class="flex flex-col bg-white p-4 shadow-sm border border-sandMuted">
+<div class="h-80 sm:h-[420px] overflow-hidden">
+<img alt="Thoughtfully curated seating area with soothing neutral tones and botanicals" class="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCREn4MlOQo7fk-ifDAldoYMYOzauwY0844HE1jRpoTyG2NGso2njcbMIEgzHzyB21DxEKkzJyvdTXLNXrNRhb4PMblB2CN1ekh2jOTCo5K94DX7uqY_Zv-snl7D2jLiJ9swUCmGeuPBczyCQXVPgzhfdA7FSl10b2OiZyjjhfR0XWdP5dK3vQCgxQ9gwqlYPS7y5iLwsEhCOv0Q2yxg142LPmO3LvbOVAOFE-B69iDyraxP5dsAhm8_EYt4pvAYQchyQ">
+</div>
+<div class="pt-4 px-2">
+<p class="font-cormorant text-lg text-charcoal">Intentional Seating &amp; Serene Ambiance</p>
+<p class="text-xs text-charcoalLight font-light mt-1">Private, supportive furnishings designed to provide grounding comfort throughout your session.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: OfficeSection -->
+<!-- BEGIN: FAQsSection -->
+<section class="py-24 bg-white" id="faqs">
+<div class="max-w-4xl mx-auto px-6 sm:px-10">
+<div class="text-center mb-14">
+<p class="text-[11px] font-semibold tracking-[0.22em] text-charcoal/70 uppercase mb-2">
+            Clarifying Care
+          </p>
+<h2 class="font-cormorant text-3xl sm:text-4xl text-charcoal font-normal">
+            Frequently Asked Questions
+          </h2>
+</div>
+<div class="space-y-6">
+<!-- Item 1 -->
+<details class="group border-b border-sandMuted pb-5" open="">
+<summary class="flex justify-between items-center cursor-pointer list-none font-cormorant text-xl text-charcoal font-medium">
+<span class="">Do you offer in-person and telehealth sessions?</span>
+<span class="text-sageMuted text-2xl group-open:rotate-45 transition-transform duration-200">+</span>
+</summary>
+<p class="mt-3 text-[13px] text-charcoalLight leading-relaxed font-light">
+              Yes. We welcome clients in-person at our serene private suite in Santa Monica, California. We also provide secure, HIPAA-compliant video telehealth sessions for clients living anywhere across California.
+            </p>
+</details>
+<!-- Item 2 -->
+<details class="group border-b border-sandMuted pb-5">
+<summary class="flex justify-between items-center cursor-pointer list-none font-cormorant text-xl text-charcoal font-medium">
+<span class="">What is your clinical approach to trauma and EMDR?</span>
+<span class="text-sageMuted text-2xl group-open:rotate-45 transition-transform duration-200">+</span>
+</summary>
+<p class="mt-3 text-[13px] text-charcoalLight leading-relaxed font-light">
+              We prioritize physical and emotional safety first. Before beginning EMDR reprocessing, we ensure you have reliable somatic grounding and distress tolerance resources. The pace is always collaborative and dictated by your nervous system’s comfort.
+            </p>
+</details>
+<!-- Item 3 -->
+<details class="group border-b border-sandMuted pb-5">
+<summary class="flex justify-between items-center cursor-pointer list-none font-cormorant text-xl text-charcoal font-medium">
+<span class="">How do I get started with therapy?</span>
+<span class="text-sageMuted text-2xl group-open:rotate-45 transition-transform duration-200">+</span>
+</summary>
+<p class="mt-3 text-[13px] text-charcoalLight leading-relaxed font-light">
+              You can schedule a complimentary 15-minute phone consultation using our online contact form. This conversation allows us to discuss your goals, answer questions about insurance/rates, and confirm that we are the right therapeutic match.
+            </p>
+</details>
+<!-- Item 4 -->
+<details class="group border-b border-sandMuted pb-5">
+<summary class="flex justify-between items-center cursor-pointer list-none font-cormorant text-xl text-charcoal font-medium">
+<span class="">Do you accept insurance?</span>
+<span class="text-sageMuted text-2xl group-open:rotate-45 transition-transform duration-200">+</span>
+</summary>
+<p class="mt-3 text-[13px] text-charcoalLight leading-relaxed font-light">
+              Dr. Maya Reynolds is an out-of-network provider. We provide monthly comprehensive "superbills" which you may submit directly to your PPO insurance for partial out-of-network reimbursement. A Good Faith Estimate is provided to all clients.
+            </p>
+</details>
+</div>
+</div>
+</section>
+<!-- END: FAQsSection -->
+<!-- BEGIN: FinalCTASection -->
+<section class="py-20 lg:py-28 bg-[#FAF7F2] border-t border-sandMuted/60" id="contact">
+<div class="w-full flex flex-col lg:flex-row items-center justify-between">
+<div class="w-full lg:w-[58%] px-8 sm:px-14 lg:pl-20 lg:pr-16 max-w-2xl">
+<p class="text-[11px] font-semibold tracking-[0.22em] text-charcoal/70 uppercase mb-4">
+            Schedule an Appointment
+          </p>
+<h2 class="font-cormorant text-3xl sm:text-4xl lg:text-[46px] text-charcoal font-normal leading-tight mb-6">
+            Find a therapist who is the right fit for <span class="font-script-accent text-sageAccent text-5xl lg:text-6xl pl-1">you.</span>
+</h2>
+<p class="text-[13px] text-charcoalLight font-light leading-relaxed mb-4">
+            Coming to therapy is a courageous decision, and connecting with the right therapist makes all the difference. We understand that your journey is personal, and we're here to support you with clinical rigor and genuine understanding every step of the way.
+          </p>
+<p class="text-[13px] text-charcoalLight font-light leading-relaxed mb-8">
+            Click the button below to schedule your complimentary 15-minute consultation or reach out directly.
+          </p>
+<div>
+<a class="inline-block px-8 py-2.5 border border-charcoal rounded-full text-[11px] font-medium tracking-[0.2em] text-charcoal uppercase hover:bg-charcoal hover:text-white transition-all duration-300" href="mailto:info@mayareynoldspsyd.com">
+              Book Now
+            </a>
+</div>
+</div>
+<div class="w-full lg:w-[42%] mt-12 lg:mt-0 h-[420px] lg:h-[580px] overflow-hidden">
+<img alt="Beach shoreline sand detail representing grounding" class="w-full h-full object-cover object-bottom" src="https://lh3.googleusercontent.com/aida/AEtjO1VlUWh1C44PMtVdTfbmvIzDM6AtfOhWRJ4jz1wwatGknl9pkNx9a0dlOlgw6g82eJhDExWHTaoBRk4QwTVhPWVROaQyMU_7cGC2hr69rh3RX80VgFjOY9ufEnxzUXiJLRThDoS598PdE4gnMGHCmEJCpw-TtGabI7x-xcVJV6y3G-_0hMAWONnS-lkloRntpQKKycpGIynhbUKzN2SrKNAMX-lCRQC3LPtdyaVcINPh4mmlS-Md0T-Ph8g">
+</div>
+</div>
+</section>
+<!-- END: FinalCTASection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-white text-charcoal border-t border-sandMuted">
+<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-xs">
+<!-- Col 1: Wordmark & Statement -->
+<div>
+<div class="font-cormorant text-2xl text-charcoal mb-1">
+            Dr. Maya Reynolds
+          </div>
+<p class="text-[9px] tracking-[0.25em] text-sageMuted uppercase mb-5 font-semibold">
+            Clinical Psychologist • PsyD
+          </p>
+<p class="text-charcoalLight leading-relaxed font-light text-[12px] max-w-xs">
+            We want to make getting started simple. You’re welcome to come into our Santa Monica office or schedule virtual appointments from anywhere in CA—whatever works best for you.
+          </p>
+</div>
+<!-- Col 2: Navigate -->
+<div>
+<p class="text-[11px] font-semibold tracking-[0.2em] text-charcoal uppercase mb-5">
+            Navigate
+          </p>
+<ul class="space-y-2.5 text-charcoalLight font-light text-[12px]">
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#hero">Home</a></li>
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#about">About Dr. Maya</a></li>
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#who-we-help">Who We Help</a></li>
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#specialties">Specialties</a></li>
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#office">Our Office</a></li>
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#faqs">FAQs</a></li>
+<li class=""><a class="hover:text-sageAccent transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<!-- Col 3: Clinical Focus -->
+<div>
+<p class="text-[11px] font-semibold tracking-[0.2em] text-charcoal uppercase mb-5">
+            Clinical Focus
+          </p>
+<ul class="space-y-2.5 text-charcoalLight font-light text-[12px]">
+<li class="">Anxiety &amp; Panic Therapy</li>
+<li class="">Trauma &amp; PTSD Recovery</li>
+<li class="">EMDR Therapy Reprocessing</li>
+<li class="">Burnout &amp; High Achievers</li>
+<li class="">Somatic Nervous System Work</li>
+<li class="">Mindfulness Integration</li>
+</ul>
+</div>
+<!-- Col 4: Contact & Location -->
+<div>
+<p class="text-[11px] font-semibold tracking-[0.2em] text-charcoal uppercase mb-5">
+            Contact &amp; Location
+          </p>
+<div class="space-y-2 text-charcoalLight font-light text-[12px] leading-relaxed">
+<p class="">123th Street 45 W<br>Santa Monica, CA 90401</p>
+<p class="pt-2">info@mayareynoldspsyd.com</p>
+<p class="">(310) 555-0194</p>
+<p class="text-[11px] text-sageDark pt-3 font-medium">
+              Serving Santa Monica, West Los Angeles, Venice, Pacific Palisades, and Telehealth across California.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Accent Bar -->
+<div class="bg-sageDark/90 text-[#F5F0EA] py-3.5 px-6 text-[11px] font-light">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+<div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+<a class="hover:underline" href="#">Terms &amp; Conditions</a>
+<span class="">|</span>
+<a class="hover:underline" href="#">Privacy Policy</a>
+<span class="">|</span>
+<a class="hover:underline" href="#">Good Faith Estimate Notice</a>
+<span class="">|</span>
+<a class="hover:underline" href="#">Disclaimer</a>
+</div>
+<p class="text-[10px] text-[#F5F0EA]/80 text-center">
+          © <span class="" id="current-year">2026</span> Dr. Maya Reynolds, PsyD. All rights reserved.
+        </p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- JavaScript for Responsive Navigation & Year Auto-update -->
+<script data-purpose="mobile-menu-and-year">
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileBackdrop = document.getElementById('mobile-backdrop');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function openMenu() {
+      if (!mobileMenu || !menuBtn) return;
+      mobileMenu.classList.remove('menu-closed');
+      mobileMenu.classList.add('menu-open');
+      if (mobileBackdrop) {
+        mobileBackdrop.classList.remove('backdrop-closed');
+        mobileBackdrop.classList.add('backdrop-open');
+      }
+      menuBtn.classList.add('menu-active');
+      menuBtn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      if (!mobileMenu || !menuBtn) return;
+      mobileMenu.classList.remove('menu-open');
+      mobileMenu.classList.add('menu-closed');
+      if (mobileBackdrop) {
+        mobileBackdrop.classList.remove('backdrop-open');
+        mobileBackdrop.classList.add('backdrop-closed');
+      }
+      menuBtn.classList.remove('menu-active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = mobileMenu.classList.contains('menu-open');
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      if (mobileBackdrop) {
+        mobileBackdrop.addEventListener('click', closeMenu);
+      }
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('menu-open')) {
+          closeMenu();
+        }
+      });
+    }
+
+    // Update Year dynamically
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  });
+</script>
+</body></html>
