@@ -2,6 +2,8 @@
 
 A modern, responsive, and production-ready web application built for a clinical psychologist practice based in Santa Monica, California.
 
+**🌐 Live Demo:** [https://therapist-website-2.vercel.app/](https://therapist-website-2.vercel.app/)
+
 ## 🚀 Tech Stack
 
 This project was built with a modern frontend stack to ensure high performance, maintainability, and excellent developer experience:
